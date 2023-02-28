@@ -164,7 +164,7 @@
 </section>
 
 <footer>
-    
+    <span>2022 - Patryk Nietrzeba</span>
 </footer>
 <script src="assets/js/script.js"></script>
 
