@@ -1,0 +1,91 @@
+.containerTriangle {
+    .zoneTriangle {
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+        left: 60%;
+        width: 0;
+        height: 0;
+        transform: translate(-55%,-50%);
+        .bas {
+            transform: translate(0%, 104%);
+            animation: triangle-appear 0.3s ease-in-out forwards;
+        }        
+        
+        .gauche {
+            transform: translate(-53%, -3%);
+            animation: triangle-appear 0.5s ease-in-out forwards;
+        }
+        .droite {
+            transform: translate(53%, -3%);
+            animation: triangle-appear 1s ease-in-out forwards;
+        }
+        .upLvG {
+            transform: translate(-53%, -106%);
+            animation: triangle-appear 1.5s ease-in-out forwards;
+        }
+        .upLvD {
+            transform: translate(53%, -106%);
+            animation: triangle-appear 2s ease-in-out forwards;
+        }
+        .upLvBas {
+            transform: translate(0%, -109%);
+            animation: triangle-appear 2.5s ease-in-out forwards;
+        }
+        .upLvLastd {
+            transform: translate(106%, -109%);
+            animation: triangle-appear 2s ease-in-out forwards;
+        }
+        .upLvLastG {
+            transform: translate(-106%, -109%);
+            animation: triangle-appear 2.5s ease-in-out forwards;
+        }        
+        .triangles2 {
+            transform: translate(-25%, -775%);
+            animation: triangle-appear 3s ease-in-out forwards;
+        }
+        .triangles2Bas {
+            transform: translate(33%, -785%);
+            animation: triangle-appear 3.5s ease-in-out forwards;
+        }
+        .droit2 {
+            transform: translate(93%, -775%);
+            animation: triangle-appear 4s ease-in-out forwards;
+        }
+        .trianglesElar {
+            transform: translate(-43%, 445%);
+            animation: triangle-appear 4.5s ease-in-out forwards;
+        }
+        .trianglesElar2 {
+            transform: translate(-3%, 460%);
+            animation: triangle-appear 5s ease-in-out forwards;
+        }
+        .trianglesElar3 {
+            transform: translate(74%, 403%);
+            animation: triangle-appear 5.5s ease-in-out forwards;
+        }
+        .mirror, .mirror2, .mirror3 {
+            rotate: -60deg;
+        }
+        .mirror {
+            transform: scaleX(-1) translate(-55%, 532%);
+            animation: triangle-appear 3s ease-in-out forwards;
+        }
+        .mirror2 {
+            transform: scaleX(-1) translate(-15%, 549%);
+            animation: triangle-appear 4.5s ease-in-out forwards;
+        }
+        .mirror3 {
+            transform: scaleX(-1) translate(41%, 577%);
+            animation: triangle-appear 5s ease-in-out forwards;
+        }
+    }
+}
+@keyframes triangle-appear {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }

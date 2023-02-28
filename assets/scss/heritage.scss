@@ -1,0 +1,101 @@
+#folio_home {
+    min-height: 100vh;
+    color: #20163D;
+    h1{
+        font-size: 2.5vw;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    h2{
+        font-size: 1.8vw;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    h3{
+        font-size: 1vw;
+        
+    }
+    p{
+        font-size: 0.8vw;
+        line-height: 1.5;
+    }
+}
+
+#folio_projet, #folio_propos, #folio_contact {
+    @extend #folio_home
+}
+.containerAbout, .containerProjet, .containerContact{
+    position: relative;
+    z-index: 3;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.triangles {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 4.2vw solid transparent;
+    border-right: 4.2vw solid transparent;
+    border-top: 7.5vw solid #1F193E;
+}
+.haut {
+    @extend .triangles;
+    border-top: none;
+    border-bottom: 7.5vw solid #1F193E;
+}
+.triangles2 {
+    @extend .triangles;
+    border-left: 2.5vw solid transparent;
+    border-right: 2.5vw solid transparent;
+    border-bottom: 1.25vw solid #1F193E;
+    border-top: 0vw solid transparent;
+}
+.triangles2Bas {
+    @extend .triangles2;
+    border-top: 1.25vw solid #1F193E;
+    border-bottom: 0vw solid transparent;
+}
+.trianglesElar {
+    @extend .triangles;
+    rotate: 60deg;
+    border-left: 2.5vw solid transparent;
+    border-right: 4.2vw solid transparent;
+    border-top: 1.7vw solid #1F193E;
+}
+.trianglesElar2 {
+    @extend .trianglesElar;
+    border-left: 4.2vw solid transparent;
+    border-right: 2.5vw solid transparent;
+    border-top: 0rem solid transparent;
+    border-bottom: 1.7vw solid #1F193E;
+}
+.trianglesElar3 {
+    @extend .trianglesElar;
+    border-left: 2.5vw solid transparent;
+    border-right: 2.5vw solid transparent;
+    border-top: 1.7vw solid #1F193E;
+}
+
+//Triangles Projet
+
+.tri {
+    position: relative;
+    width: 15%;
+    height: 40%;
+    margin: -3%;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    display: flex;
+    justify-content: center;
+    background:#e9e2ff;
+    transition: 0.8s;
+    &:hover{
+        width: 16%;
+        height: 41%;
+    }
+}
+.tri2 {
+    @extend .tri;
+    clip-path: polygon(0% 0%, 50% 100%, 100% 0%)
+}

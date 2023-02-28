@@ -1,0 +1,54 @@
+#folio_propos{
+    .containerAbout{
+        display: flex;
+        .about{
+            background: rgba($color: #0B0918, $alpha: 1);
+            padding: 2%;
+            box-shadow: 12px 12px 2px 1px rgba(22, 21, 26, 0.2);
+            border-radius: 5px;
+            width: 35%;
+            margin: 6% auto;
+            .texteMoi{
+                float: left;
+            }
+            h2,h3,p{
+                color: #F2EEFF;
+            }
+            .imgAbout{
+                width: 40%;
+                // display: flex;
+                // justify-content: center;
+                float: left;
+                img {
+                    width: 14vw;
+                }
+            }
+            .textePropos{
+                width: 100%;
+                h3{
+                    margin-top: 15px;
+                    margin-bottom: 8px;
+                }
+            }
+        }
+    }
+    .skills{
+        display: flex;
+        justify-content: center;
+        border-bottom: solid 2px #20193E;
+        width: 18%;
+        margin: auto;
+    }
+    .articlesSkills{
+        position: relative;
+        margin-top: 4%;
+        display: flex;
+        justify-content: center;  
+        article{
+            min-height: 50vh;
+            width: 20%;
+            background: red;
+            margin: 2%;
+        }
+    }
+}
