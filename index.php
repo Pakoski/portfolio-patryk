@@ -34,12 +34,12 @@
     </div> 
 </header>
 
-<section id="folio_home" class="section-canvas">
+<main id="folio_home" class="section-canvas">
     <div class="divHome">
-        <div class="texteHome">
+        <article class="texteHome">
             <h1>Bonjour ! </h1>
             <h2>Je suis un Développeur Web Junior</h2>
-        </div>
+        </article>
         <div class="containerTriangle">
             <div class="zoneTriangle">
                 <div class="triangles bas"></div>
@@ -64,7 +64,7 @@
         </div>
     </div>
     <canvas id="canvas1"></canvas>
-</section>
+</main>
 
 <section id="folio_propos" class="section-canvas">
     <div class="containerAbout">
