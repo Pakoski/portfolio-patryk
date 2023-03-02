@@ -1,3 +1,7 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 #folio_home, #folio_projet, #folio_propos, #folio_contact {
   min-height: 100vh;
   color: #20163D;
@@ -14,19 +18,17 @@
 }
 #folio_home h3, #folio_projet h3, #folio_propos h3, #folio_contact h3 {
   font-size: 1vw;
+  font-weight: 500;
 }
 #folio_home p, #folio_projet p, #folio_propos p, #folio_contact p {
   font-size: 0.8vw;
   line-height: 1.5;
+  font-weight: 500;
 }
 
-.containerAbout, .containerProjet, .containerContact {
+.containerAbout, .containerProjet, .containerContact, .texteHome {
   position: relative;
   z-index: 3;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
 }
 
 .triangles, .trianglesElar, .trianglesElar3, .trianglesElar2, .triangles2, .triangles2Bas, .haut {
@@ -83,7 +85,7 @@ body {
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
   display: flex;
   justify-content: center;
-  background: #e9e2ff;
+  background: #24193d;
   transition: 0.8s;
 }
 .tri:hover, .tri2:hover {
@@ -93,4 +95,26 @@ body {
 
 .tri2 {
   clip-path: polygon(0% 0%, 50% 100%, 100% 0%);
+}
+
+.button1, .button2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  width: 30%;
+  font-size: 1.2vw;
+  border-radius: 3px;
+  background: #F2EEFF;
+  border: none;
+  cursor: pointer;
+  color: #24193d;
+  text-align: center;
+  margin-top: 2%;
+  padding: 1%;
+}
+
+.button2 {
+  background: #24193d;
+  color: #F2EEFF;
+  width: 20%;
 }

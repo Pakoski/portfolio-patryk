@@ -51,7 +51,7 @@ function createParticles(elementId) {
         ctx.restore();
       }
     
-      ctx.fillStyle = "rgba(32, 25, 62, 0.1)";
+      ctx.fillStyle = "rgba(52, 45, 82, 0.2)";
       ctx.fill();
     
       particle.x += particle.speedX;
@@ -114,3 +114,36 @@ overlay.addEventListener("click", function () {
     this.parentNode.classList.remove(activatedClass);
 });
 
+//dark and light mode
+
+const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+const sections = document.querySelectorAll('section');
+const nav = document.querySelector('header')
+function switchTheme(e) {
+  if (e.target.checked) {
+    sections.forEach(section => section.classList.add('dark-mode'));
+    nav.classList.add('dark-mode');
+    localStorage.setItem('myTheme', 'dark');
+  } else {
+    sections.forEach(section => section.classList.remove('dark-mode'));
+    nav.classList.remove('dark-mode');
+    localStorage.setItem('myTheme', 'light');
+  }
+}
+
+function setInitialTheme() {
+  const theme = localStorage.getItem('myTheme');
+  if (theme === 'dark') {
+    toggleSwitch.checked = true;
+    sections.forEach(section => section.classList.add('dark-mode'));
+    nav.classList.add('dark-mode');
+  } else {
+    toggleSwitch.checked = false;
+    sections.forEach(section => section.classList.remove('dark-mode'));
+    nav.classList.remove('dark-mode');
+  }
+}
+
+toggleSwitch.addEventListener('change', switchTheme);
+
+window.addEventListener('load', setInitialTheme);

@@ -6,6 +6,7 @@ header {
     text-transform: uppercase;
     display: flex;
     .logo {
+        margin: -1%;
             img {
                 height: 4.5vw;
             }
@@ -143,8 +144,4 @@ header {
         transform: translateX(0%);
     }
   }   
-}
-
-
-
-    
+}  

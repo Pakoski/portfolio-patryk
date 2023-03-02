@@ -6,6 +6,9 @@ header {
   text-transform: uppercase;
   display: flex;
 }
+header .logo {
+  margin: -1%;
+}
 header .logo img {
   height: 4.5vw;
 }

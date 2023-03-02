@@ -1,3 +1,7 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
 #folio_home {
     min-height: 100vh;
     color: #20163D;
@@ -13,25 +17,24 @@
     }
     h3{
         font-size: 1vw;
+        font-weight: 500;
         
     }
     p{
         font-size: 0.8vw;
         line-height: 1.5;
+        font-weight: 500;
     }
 }
 
 #folio_projet, #folio_propos, #folio_contact {
     @extend #folio_home
 }
-.containerAbout, .containerProjet, .containerContact{
+.containerAbout, .containerProjet, .containerContact, .texteHome{
     position: relative;
     z-index: 3;
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
-}
 .triangles {
     position: absolute;
     width: 0;
@@ -88,7 +91,7 @@ body {
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     display: flex;
     justify-content: center;
-    background:#e9e2ff;
+    background:#24193d;
     transition: 0.8s;
     &:hover{
         width: 16%;
@@ -98,4 +101,28 @@ body {
 .tri2 {
     @extend .tri;
     clip-path: polygon(0% 0%, 50% 100%, 100% 0%)
+}
+
+//Bouttons
+
+.button1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    width: 30%;
+    font-size: 1.2vw;
+    border-radius: 3px;
+    background:#F2EEFF;
+    border: none;
+    cursor: pointer;
+    color: #24193d;
+    text-align: center;
+    margin-top: 2%;
+    padding: 1%
+}
+.button2{
+    @extend .button1;
+    background: #24193d;
+    color: #F2EEFF;
+    width: 20%;
 }

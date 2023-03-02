@@ -1,6 +1,46 @@
+#folio_contact {
+  display: flex;
+}
 #folio_contact .containerContact {
-  width: 40%;
+  width: 60%;
   height: 55vh;
-  margin: 10% auto;
-  background: darkcyan;
+  margin: 15% auto;
+  color: #f2eeff;
+  border-radius: 5px;
+  display: flex;
+}
+#folio_contact .containerContact .contactImg {
+  width: 50%;
+  background: #1d1431;
+}
+#folio_contact .containerContact .contactForm {
+  display: flex;
+  width: 50%;
+  background: #2d1f4d;
+  align-items: center;
+}
+#folio_contact .containerContact .contactForm form {
+  width: 100%;
+}
+#folio_contact .containerContact .contactForm form div {
+  display: flex;
+  width: 80%;
+  margin: 2vh auto;
+  justify-content: center;
+}
+#folio_contact .containerContact .contactForm form div input, #folio_contact .containerContact .contactForm form div textarea {
+  font-size: 1.5vw;
+  text-align: center;
+  color: #f2eeff;
+  border: 2px solid #F2EEFF;
+  width: 100%;
+  height: 3vh;
+  border-radius: 8px;
+  background: #24193d;
+  outline: none;
+  cursor: pointer;
+}
+#folio_contact .containerContact .contactForm form div textarea {
+  height: 20vh;
+  resize: none;
 }

@@ -2,18 +2,32 @@
   display: flex;
 }
 #folio_propos .containerAbout .about {
-  background: #0b0918;
+  background: #1d1431;
   padding: 2%;
-  box-shadow: 12px 12px 2px 1px rgba(22, 21, 26, 0.2);
   border-radius: 5px;
   width: 35%;
   margin: 6% auto;
 }
 #folio_propos .containerAbout .about .texteMoi {
   float: left;
+  width: 60%;
 }
 #folio_propos .containerAbout .about h2, #folio_propos .containerAbout .about h3, #folio_propos .containerAbout .about p {
   color: #F2EEFF;
+}
+#folio_propos .containerAbout .about h2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15%;
+  text-transform: capitalize;
+}
+#folio_propos .containerAbout .about h3 {
+  margin-left: 12%;
+  margin-bottom: 4%;
+}
+#folio_propos .containerAbout .about .btn {
+  width: 100%;
+  margin-left: 12%;
 }
 #folio_propos .containerAbout .about .imgAbout {
   width: 40%;
@@ -38,13 +52,31 @@
 }
 #folio_propos .articlesSkills {
   position: relative;
-  margin-top: 4%;
+  margin-top: 1%;
   display: flex;
   justify-content: center;
+  color: #F2EEFF;
 }
 #folio_propos .articlesSkills article {
-  min-height: 50vh;
-  width: 20%;
-  background: red;
+  display: flex;
+  justify-content: center;
+  min-height: 36vh;
+  width: 18%;
+  background: #1d1431;
   margin: 2%;
+  text-align: center;
+  margin-bottom: 8%;
+}
+#folio_propos .articlesSkills article div {
+  width: 80%;
+}
+#folio_propos .articlesSkills article div h2 {
+  margin-top: 10%;
+  margin-bottom: 8%;
+}
+#folio_propos .articlesSkills article div h3 {
+  margin-bottom: 5%;
+}
+#folio_propos .articlesSkills article div p {
+  margin-bottom: 10%;
 }
