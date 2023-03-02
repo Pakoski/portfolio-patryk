@@ -80,17 +80,6 @@ abstract class Bdd {
         echo 'Les données ont été enregistrées avec succès.';
     }
 
-    public static function updateMsg(Msg $msg) : bool{
-        $texteRequete = "UPDATE msg
-        SET nom = :nom, email = :email, texte = :texte WHERE id = :id";
-        $pdostatement = self::pdo()->prepare($texteRequete);
-        $pdostatement->bindValue(":nom", $msg->getNom());
-        $pdostatement->bindValue(":email", $msg->getEmail());
-        $pdostatement->bindValue(":texte", $msg->getTexte());
-        $pdostatement->bindValue(":id", $msg->getId());
-        return $pdostatement->execute();
-    }
-
     public static function deleteMsg(Msg $msg){
         return self::pdo()->exec("DELETE FROM msg WHERE id=" . $msg->getId());
     }
