@@ -26,9 +26,6 @@
                 <?= $message->getTexte() ?>
             </td>
             <td>
-                <a href="<?= lien("msg", "modifier", $message->getId()) ?>">
-                    <i class="fa fa-edit"></i>
-                </a>
                 <a href="<?= lien("msg", "supprimer", $message->getId()) ?>">
                     <i class="fa fa-trash"></i>
                 </a>

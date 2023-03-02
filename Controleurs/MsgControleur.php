@@ -52,40 +52,7 @@ class MsgControleur {
         include "vues/message/form.html.php";
         include "vues/footer.html.php";
     }
-    public function modifier($id){
-        $msg = Bdd::selectByIdMsg("msg", $id);
 
-        if($_POST){
-        $nom = $_POST["nom"] ?? null;
-        $email = $_POST["email"] ?? null;
-        $texte = $_POST["texte"] ?? null;
-
-        if( !empty($nom) && !empty($email) ) {
-            if( strlen($nom) > 50 ) {
-                $erreurs["nom"] = "Le nom ne doit pas dépasser 50 caractères";
-            }
-            if( strlen($nom) < 4 ) {
-                $erreurs["titre"] = "Le nom doit avoir au moins 4 caractères";
-            }
-        } else {
-            $erreurs["generale"] = "Veuillez remplir les champs requis";
-        }
-
-        if( empty($erreurs) ){
-            $msg->setNom($nom);
-            $msg->setEmail($email);
-            $msg->setTexte($texte);
-            if( Bdd::updateMsg($msg) ){
-                redirection(lien("msg"));
-            } else {
-                $erreurs["generale"] = "Erreur lors de la modification en bdd";
-            }
-        }
-    }
-        include "vues/header.html.php";
-        include "vues/message/form.html.php";
-        include "vues/footer.html.php";
-    }
     public function supprimer($id){
         if($id) {
             if( is_numeric($id) ) {
